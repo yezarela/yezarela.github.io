@@ -19,8 +19,7 @@ function HomepageHeader() {
         </p>
 
         <p className={clsx(styles.subtitle)}>
-          Sometimes I write things.
-          You can find my most recent articles below.
+          Sometimes I write things. You can find my most recent articles below.
         </p>
       </div>
     </header>
@@ -58,10 +57,7 @@ export default function Home({ recentPosts }) {
     dateTimeFormat.format(new Date(blogDate));
 
   return (
-    <Layout
-      title={siteConfig.title}
-      description={siteConfig.tagline}
-    >
+    <Layout>
       <HomepageHeader />
       <main
         style={{ padding: 30, marginTop: 10 }}

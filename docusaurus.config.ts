@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Turning Rendang into Code - Yesarela Ritonga",
+  title: "Codes by Yesarela Ritonga",
   tagline: "I love nasi padang",
   favicon: "img/favicon.ico",
 

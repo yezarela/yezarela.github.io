@@ -56,17 +56,7 @@ async function blogPluginExtended(...pluginArgs) {
         // The component to use for the "Home" page route
         component: '@site/src/components/Home/index.tsx',
 
-        // These are the props that will be passed to our "Home" page component
         modules: {
-          homePageBlogMetadata: await actions.createData(
-            'home-page-blog-metadata.json',
-            JSON.stringify({
-              blogTitle: pluginOptions.blogTitle,
-              blogDescription: pluginOptions.blogDescription,
-              totalPosts: content.blogPosts.length,
-              totalRecentPosts: recentPosts.length,
-            })
-          ),
           recentPosts: await Promise.all(
             recentPosts.map(createRecentPostModule)
           ),
