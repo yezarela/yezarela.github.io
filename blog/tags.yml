@@ -1,0 +1,27 @@
+architecture:
+  label: Architecture
+  permalink: /architecture
+
+cloud:
+  label: Cloud
+  permalink: /cloud
+
+serverless:
+  label: Serverless
+  permalink: /serverless
+
+aws:
+  label: AWS
+  permalink: /aws
+
+gcp:
+  label: GCP
+  permalink: /gcp
+
+go:
+  label: Go
+  permalink: /go
+
+cost-optimization:
+  label: Cost Optimization
+  permalink: /cost-optimization
