@@ -24,7 +24,8 @@ export default function About() {
               where I get to build the foundation for awesome things.
             </p>
             <p>
-              Connect with me:
+              I am open to all sorts of collaboration. Feel free to contact me
+              via any channel listed below.
               <ul>
                 <li>
                   Email:{" "}
