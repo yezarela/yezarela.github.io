@@ -62,9 +62,11 @@ WHERE name = 'idle_in_transaction_session_timeout';
 
 ### Application Code Best Practices
 
-- **Keep transactions short:** Avoid performing lengthy computations or blocking operations within a transaction. If necessary, break down complex transactions into smaller ones.
-- **Explicitly commit or rollback:** Always explicitly commit or rollback transactions when they are no longer needed. Relying on implicit commits or auto-commits can lead to transactions remaining open for longer than necessary.
-- **Handle errors gracefully:** Implement proper error handling mechanisms to ensure that transactions are rolled back in case of errors. Unhandled exceptions can leave transactions open, leading to the "idle in transaction" state.
+Alright, database wizards! Now that we've fortified our Postgres fortress with the right configuration, let's dive into the magical realm of application code. Remember, even the most powerful spells can fizzle out if not cast with precision and care. So, let's conjure some best practices to keep those idle transactions at bay!
+
+- **Keep transactions short ⌛️:** Nobody likes a long-winded monologue, not even your database. Avoid performing lengthy computations or blocking operations within a transaction. If necessary, break down complex transactions into smaller ones.
+- **Explicitly commit or rollback 🪄:** Just like a good magician never leaves a trick unfinished, always explicitly commit or rollback your transactions when they've served their purpose. Relying on implicit commits or auto-commits can lead to transactions remaining open for longer than necessary.
+- **Handle errors gracefully 🧨:** Even the best performers encounter mishaps. Implement proper error handling mechanisms to ensure that transactions are rolled back in case of errors. Unhandled exceptions can leave transactions open, leading to the "idle in transaction" state.
 
 ## Wrapping Up
 
