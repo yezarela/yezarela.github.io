@@ -25,3 +25,11 @@ go:
 cost-optimization:
   label: Cost Optimization
   permalink: /cost-optimization
+
+tips:
+  label: Tips
+  permalink: /tips
+
+database:
+  label: Database
+  permalink: /database

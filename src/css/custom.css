@@ -28,3 +28,8 @@
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.purple-text {
+  color: rgb(189, 147, 249);
+  font-weight: bold;
+}
