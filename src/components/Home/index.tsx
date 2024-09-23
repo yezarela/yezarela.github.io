@@ -32,7 +32,7 @@ function RecentBlogPostCard({ recentPost, date }) {
     <article className={styles.postCard}>
       <header>
         <h2>
-          <a href="/blog/optimizing-costs-of-google-kubernetes-engine">
+          <a href={'/blog/' + metadata.frontMatter.slug}>
             {metadata.title}
           </a>
         </h2>
