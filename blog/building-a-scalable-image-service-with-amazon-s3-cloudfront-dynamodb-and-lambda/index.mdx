@@ -12,7 +12,7 @@ import Gist from 'react-gist';
 Building a Scalable Image Service with Amazon S3 + CloudFront, DynamoDB and Lambda
 ==================================================================================
 
-![Photo by Lauren Mancke on Unsplash](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*vToK0txGgDdh9sFZ)
+![Photo by Lauren Mancke on Unsplash](desk.webp)
 
 In this guide, I’ll walk you through the steps to create a scalable image service using Amazon Web Services (AWS) components: S3, CloudFront, DynamoDB, and Lambda.
 
@@ -37,7 +37,7 @@ The image service architecture comprises the following components:
 
 ### Image Upload
 
-![Image upload flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*lzYWJGSC8t_aQ7_qm1rXLg.png)
+![Image upload flow](image-upload.webp)
 
 *   Users upload images via a web or mobile application.
 *   The application sends the image data to an API Gateway endpoint.
@@ -48,14 +48,14 @@ _Be aware that Lambda has a 6MB limit for the payload size. Alternatively, you c
 
 ### Image Processing
 
-![Image processing flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*veIZ13imSA3x0-YFhYyJKw.png)
+![Image processing flow](image-processing.webp)
 
 *   When an image is uploaded, S3 publishes event to an SNS topic that triggers a Lambda function.
 *   The Lambda function retrieves the original image from upload bucket, performs the image transformation, and stores the transformed images in the S3 asset bucket, which is integrated with CloudFront for efficient content delivery. To manage storage costs effectively, the original image is deleted from the upload bucket after the transformation is completed.
 
 ### Image Delivery
 
-![Image delivery flow](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LJINB_9jPYpg28RDNzKeYA.png)
+![Image delivery flow](image-delivery.webp)
 
 *   Users request images through a web or mobile application.
 *   The application constructs URLs pointing to CloudFront distributions associated with the S3 buckets.

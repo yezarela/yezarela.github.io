@@ -11,15 +11,15 @@ tags:
 Architecting AWS Lambda Functions in Golang: A Clean Approach
 =============================================================
 
-![Photo by Lance Anderson on Unsplash](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*JPIgnx-4XbTyZAWn)
+![Photo by Lance Anderson on Unsplash](architecture.webp)
 
 Keeping code structure clean when using AWS Lambda can be a bit trickier, since there will be a bunch of entry points in our code. In fact, I usually spend some time finding how to structure my code before starting to code, to achieve “maintainable” and “easy to read” code. In this post, we’ll try out how to use Clean Architecture with AWS Lambda and Go.
 
 <!-- truncate -->
 
-_In_ [_previous post_](http://localhost:3000/blog/unveiling-clean-architecture-guidelines-benefits-and-trade-offs)_, I’ve summarized some concepts of what Clean Architecture is and the pros cons, please check it out if you are keen!_
+_In_ [_previous post_](https://yezarela.github.io/blog/unveiling-clean-architecture-guidelines-benefits-and-trade-offs)_, I’ve summarized some concepts of what Clean Architecture is and the pros cons, please check it out if you are keen!_
 
-![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*pzzvLDAAirzGOf4scdbI8w.png)
+![captionless image](clean-architecture.webp)
 
 The first purpose of Clean Architecture is “**Independent of Frameworks”** so we will not depend on any framework rule and limitations. In this project, we will use 4 layers to structure our code with Clean Architecture:
 

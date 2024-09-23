@@ -11,7 +11,7 @@ tags:
 Optimizing Costs of Google Kubernetes Engine
 ============================================
 
-![Photo by Chris Briggs on Unsplash](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*tsMt_DHyJvrlPi79)
+![Photo by Chris Briggs on Unsplash](bridge.webp)
 
 With increasing need for flexibility, scalability and cost-effectiveness, many organizations decided to migrate and leverage the benefits of cloud infrastructure. But ironically, cloud spending has become one of the biggest cost center for many businesses. While the cloud offers great advantages, it can also lead to higher expenses if not managed effectively.
 
@@ -28,7 +28,7 @@ Identifying resource consumption is the first step of optimization, we need to g
 *   GKE workload cost optimization recommendation: This gives us quick actual usage vs requested resource of each workloads in certain time-range.
 *   CPU & Memory utilization metrics: This gives us a more detailed utilizations data of every workloads and a more flexible way to visualize it. Thankfully, GKE already comes with its monitoring dashboards, the most useful one in this case is [GKE Compute Resources — Workload View](https://console.cloud.google.com/monitoring/dashboards/integration/gke.gke-compute-resources-workload-view).
 
-![GKE Compute Resources — Workload View Dashboard](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*o3mVi2CBq112-fLYPxsK8A.png)
+![GKE Compute Resources — Workload View Dashboard](compute-dashboard.webp)
 
 At the end of this step, we found out that our total utilizations never went above 10%. Additionally, almost all of the workloads didn’t even reach 10% of resources they requested, which conclude that we have been over-allocating resources.
 

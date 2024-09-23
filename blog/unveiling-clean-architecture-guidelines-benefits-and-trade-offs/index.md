@@ -9,7 +9,7 @@ tags:
 Unveiling Clean Architecture: Guidelines, Benefits, and Trade-offs
 ==================================================================
 
-![Photo by Samantha Gades on Unsplash](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*ipNNgSD_SKiPf-ta)
+![Photo by Samantha Gades on Unsplash](wall.webp)
 
 You may have heard about Clean Architecture before and still figuring out what that is and what it is trying to solve, yes I was there too. In this post, I’ll try to explain and summarize Clean Architecture from some sources I read in a simple and hopefully quite straightforward way for engineers to understand.
 
@@ -19,7 +19,7 @@ You may have heard about Clean Architecture before and still figuring out what t
 
 Clean architecture is a software design philosophy that **separates** the elements of a software design into ring levels. An important goal of clean architecture is to provide developers with a way to organize code in such a way that it encapsulates the business logic but keeps it separate from the delivery mechanism. As you can see in the image below, there are some common layers used in Clean Architecture to fit this goal:
 
-![Source: blog.cleancoder.com](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*KXkQmsgDoJwd5Zhy.jpeg)
+![Source: blog.cleancoder.com](clean.webp)
 
 We will talk about what each layer does later, but first let’s see what is actually the purpose of this design, what is Clean Architecture trying to solve?
 
