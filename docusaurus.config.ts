@@ -51,6 +51,10 @@ const config: Config = {
             return items.filter((item) => !item.url.includes("/page/"));
           },
         },
+        gtag: {
+          trackingID: 'G-QJFV3TL9J3',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -81,7 +85,6 @@ const config: Config = {
     metadata: [
       { name: "keywords", content: "engineering, blog" },
       { name: "description", content: "Engineering blog powered by nasi padang and a healthy dose of air putih" },
-      // {name: 'twitter:card', content: 'summary_large_image'},
     ],
     // Replace with your project's social card
     // image: "img/docusaurus-social-card.jpg",
