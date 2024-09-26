@@ -39,6 +39,18 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
+        sitemap: {
+          lastmod: "date",
+          changefreq: "weekly",
+          priority: 0.5,
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
+          createSitemapItems: async (params) => {
+            const { defaultCreateSitemapItems, ...rest } = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes("/page/"));
+          },
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -66,10 +78,10 @@ const config: Config = {
 
   headTags: [
     {
-      tagName: 'meta',
+      tagName: "meta",
       attributes: {
-        name: 'description',
-        content: 'Powered by nasi padang and a healthy dose of air putih',
+        name: "description",
+        content: "Powered by nasi padang and a healthy dose of air putih",
       },
     },
   ],
@@ -77,7 +89,7 @@ const config: Config = {
   themeConfig: {
     // SEO: Declare some <meta> tags
     metadata: [
-      {name: 'keywords', content: 'engineering, blog'},
+      { name: "keywords", content: "engineering, blog" },
       // {name: 'twitter:card', content: 'summary_large_image'},
     ],
     // Replace with your project's social card
@@ -97,10 +109,10 @@ const config: Config = {
         { to: "/blog", label: "Blog", position: "left" },
         { to: "/about", label: "About", position: "left" },
         {
-          href: 'https://github.com/yezarela',
-          label: 'GitHub',
-          position: 'right',
-        }
+          href: "https://github.com/yezarela",
+          label: "GitHub",
+          position: "right",
+        },
       ],
     },
     footer: {
