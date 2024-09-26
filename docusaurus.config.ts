@@ -76,20 +76,11 @@ const config: Config = {
     ],
   ],
 
-  headTags: [
-    {
-      tagName: "meta",
-      attributes: {
-        name: "description",
-        content: "Powered by nasi padang and a healthy dose of air putih",
-      },
-    },
-  ],
-
   themeConfig: {
     // SEO: Declare some <meta> tags
     metadata: [
       { name: "keywords", content: "engineering, blog" },
+      { name: "description", content: "Engineering blog powered by nasi padang and a healthy dose of air putih" },
       // {name: 'twitter:card', content: 'summary_large_image'},
     ],
     // Replace with your project's social card
