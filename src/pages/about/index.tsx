@@ -29,7 +29,7 @@ export default function About() {
               <ul>
                 <li>
                   Email:{" "}
-                  <a href="mailto:yezarela@gmail.com">yezarela@gmail.com</a>
+                  <a href="mailto:yesa@codethetalk.tech">yesa@codethetalk.tech</a>
                 </li>
                 <li>
                   LinkedIn:{" "}
