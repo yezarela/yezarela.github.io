@@ -19,18 +19,14 @@ export default function About() {
               infrastructure – it's like solving a giant puzzle! ☁️
             </p>
             <p className="subtitle">
-              I've been in software engineering for over 8 years now. Currently,
-              I'm a Staff Software Engineer, Platform at Gravel Technology,
-              where I get to build the foundation for awesome things.
+              I've been in software engineering for over 9 years now. Currently,
+              I'm a Senior Software Engineer at Grab,
+              where I get to build awesome things.
             </p>
             <p>
               I am open to all sorts of collaboration. Feel free to contact me
               via any channel listed below.
               <ul>
-                <li>
-                  Email:{" "}
-                  <a href="mailto:yesa@codethetalk.tech">yesa@codethetalk.tech</a>
-                </li>
                 <li>
                   LinkedIn:{" "}
                   <a href="https://linkedin.com/in/yesarela-ritonga">
